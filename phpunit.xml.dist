@@ -35,4 +35,8 @@
             <directory suffix=".php">./src</directory>
         </include>
     </source>
+    <php>
+        <env name="ECONOMIC_APP_SECRET_TOKEN" value="SECRET_TOKEN"/>
+        <env name="ECONOMIC_AGREEMENT_GRANT_TOKEN" value="GRANT_TOKEN"/>
+    </php>
 </phpunit>
