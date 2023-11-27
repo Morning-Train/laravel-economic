@@ -27,9 +27,9 @@ it('sends request with filters', function () {
 
     Http::assertSent(function (Request $request) {
         return $request->data() === [
-                'pageSize' => 1,
-                'skipPages' => 0,
-                'filter' => 'name$eq:Morningtrain',
-            ];
+            'pageSize' => 1,
+            'skipPages' => 0,
+            'filter' => 'name$eq:Morningtrain',
+        ];
     });
 });
