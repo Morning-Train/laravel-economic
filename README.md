@@ -15,13 +15,6 @@ You can install the package via composer:
 composer require morning-train/laravel-e-conomic
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-e-conomic-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
@@ -32,13 +25,9 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'app_secret_token' => env('ECONOMIC_APP_SECRET_TOKEN'),
+    'agreement_grant_token' => env('ECONOMIC_AGREEMENT_GRANT_TOKEN'),
 ];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-e-conomic-views"
 ```
 
 ## Usage
