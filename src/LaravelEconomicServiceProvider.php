@@ -4,7 +4,6 @@ namespace MorningTrain\LaravelEConomic;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MorningTrain\LaravelEConomic\Commands\LaravelEConomicCommand;
 
 class LaravelEconomicServiceProvider extends PackageServiceProvider
 {

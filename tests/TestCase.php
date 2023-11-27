@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'MorningTrain\\LaravelEConomic\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'MorningTrain\\LaravelEConomic\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
