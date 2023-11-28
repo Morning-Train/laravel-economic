@@ -38,13 +38,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MorningTrain\\LaravelEConomic\\": "src/",
-            "MorningTrain\\LaravelEConomic\\Database\\Factories\\": "database/factories/"
+            "MorningTrain\\LaravelEconomic\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MorningTrain\\LaravelEConomic\\Tests\\": "tests/",
+            "MorningTrain\\LaravelEconomic\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -79,7 +78,7 @@
                 "LaravelEconomicServiceProvider"
             ],
             "aliases": {
-                "LaravelEConomic": "LaravelEconomic"
+                "LaravelEconomic": "LaravelEconomic"
             }
         }
     },

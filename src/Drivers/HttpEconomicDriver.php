@@ -1,6 +1,6 @@
 <?php
 
-namespace MorningTrain\LaravelEConomic\Drivers;
+namespace MorningTrain\LaravelEconomic\Drivers;
 
 use Illuminate\Support\Facades\Http;
 use MorningTrain\Economic\Classes\EconomicResponse;
