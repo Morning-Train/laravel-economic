@@ -75,7 +75,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEconomicServiceProvider"
+                "MorningTrain\\LaravelEconomic\\LaravelEconomicServiceProvider"
             ],
             "aliases": {
                 "LaravelEconomic": "LaravelEconomic"
