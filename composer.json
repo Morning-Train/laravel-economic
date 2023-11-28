@@ -76,10 +76,7 @@
         "laravel": {
             "providers": [
                 "MorningTrain\\LaravelEconomic\\LaravelEconomicServiceProvider"
-            ],
-            "aliases": {
-                "LaravelEconomic": "LaravelEconomic"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
