@@ -20,7 +20,7 @@
         "spatie/laravel-package-tools": "^1.14.0",
         "illuminate/contracts": "^10.0",
         "illuminate/http": "^10.0",
-        "morningtrain/economic": "^0.1"
+        "morningtrain/economic": "^0.2"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -38,12 +38,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MorningTrain\\LaravelEconomic\\": "src/"
+            "Morningtrain\\LaravelEconomic\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MorningTrain\\LaravelEconomic\\Tests\\": "tests/",
+            "Morningtrain\\LaravelEconomic\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -75,7 +75,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MorningTrain\\LaravelEconomic\\LaravelEconomicServiceProvider"
+                "Morningtrain\\LaravelEconomic\\LaravelEconomicServiceProvider"
             ]
         }
     },

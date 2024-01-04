@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
-use MorningTrain\Economic\Resources\Customer;
+use Morningtrain\Economic\Resources\Customer;
 
 it('adds headers from env', function () {
     Http::fake([

@@ -1,11 +1,11 @@
 <?php
 
-namespace MorningTrain\LaravelEconomic;
+namespace Morningtrain\LaravelEconomic;
 
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
-use MorningTrain\Economic\Services\EconomicApiService;
-use MorningTrain\LaravelEconomic\Drivers\HttpEconomicDriver;
+use Morningtrain\Economic\Services\EconomicApiService;
+use Morningtrain\LaravelEconomic\Drivers\HttpEconomicDriver;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

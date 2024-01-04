@@ -33,8 +33,8 @@ return [
 ## Usage
 
 ```php
-$laravelEConomic = new MorningTrain\LaravelEConomic();
-echo $laravelEConomic->echoPhrase('Hello, MorningTrain!');
+$laravelEConomic = new Morningtrain\LaravelEConomic();
+echo $laravelEConomic->echoPhrase('Hello, Morningtrain!');
 ```
 
 ## Testing

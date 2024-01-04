@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Http;
-use MorningTrain\LaravelEconomic\Tests\TestCase;
+use Morningtrain\LaravelEconomic\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 

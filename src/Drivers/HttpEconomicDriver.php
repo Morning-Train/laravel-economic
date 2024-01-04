@@ -1,10 +1,10 @@
 <?php
 
-namespace MorningTrain\LaravelEconomic\Drivers;
+namespace Morningtrain\LaravelEconomic\Drivers;
 
 use Illuminate\Support\Facades\Http;
-use MorningTrain\Economic\Classes\EconomicResponse;
-use MorningTrain\Economic\Interfaces\EconomicDriver;
+use Morningtrain\Economic\Classes\EconomicResponse;
+use Morningtrain\Economic\Interfaces\EconomicDriver;
 
 class HttpEconomicDriver implements EconomicDriver
 {
@@ -17,7 +17,7 @@ class HttpEconomicDriver implements EconomicDriver
 
     public function post(string $url, array $body = []): EconomicResponse
     {
-        $response = Http::economic()->post($url, $body);
+        $response = Http::economic()->post($url, json_encode($body));
 
         return new EconomicResponse($response->status(), $response->json());
     }

@@ -1,10 +1,10 @@
 <?php
 
-namespace MorningTrain\LaravelEconomic\Tests;
+namespace Morningtrain\LaravelEconomic\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use MorningTrain\LaravelEconomic\LaravelEconomicServiceProvider;
+use Morningtrain\LaravelEconomic\LaravelEconomicServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'MorningTrain\\LaravelEconomic\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Morningtrain\\LaravelEconomic\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
