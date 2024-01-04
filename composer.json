@@ -1,10 +1,10 @@
 {
-    "name": "morning-train/laravel-e-conomic",
-    "description": "This is my package laravel-e-conomic",
+    "name": "morningtrain/laravel-economic",
+    "description": "This is my package laravel-economic",
     "keywords": [
         "Morningtrain",
         "laravel",
-        "laravel-e-conomic"
+        "laravel-economic"
     ],
     "homepage": "https://github.com/morning-train/laravel-e-conomic",
     "license": "MIT",
@@ -20,7 +20,7 @@
         "spatie/laravel-package-tools": "^1.14.0",
         "illuminate/contracts": "^10.0",
         "illuminate/http": "^10.0",
-        "morning-train/e-conomic": "dev-main"
+        "morningtrain/economic": "^0.1"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
