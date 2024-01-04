@@ -17,7 +17,7 @@ class HttpEconomicDriver implements EconomicDriver
 
     public function post(string $url, array $body = []): EconomicResponse
     {
-        $response = Http::economic()->post($url, json_encode($body));
+        $response = Http::economic()->post($url, $body);
 
         return new EconomicResponse($response->status(), $response->json());
     }
