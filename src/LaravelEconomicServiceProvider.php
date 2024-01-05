@@ -15,7 +15,19 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LaravelEconomicServiceProvider extends PackageServiceProvider
 {
-    public function boot()
+    public function configurePackage(Package $package): void
+    {
+        /*
+         * This class is a Package Service Provider
+         *
+         * More info: https://github.com/spatie/laravel-package-tools
+         */
+        $package
+            ->name('laravel-e-conomic')
+            ->hasConfigFile();
+    }
+
+    public function packageBooted()
     {
         $this->app->singleton(RequestLogger::class, config('e-conomic.request_logger'));
 
@@ -49,17 +61,5 @@ class LaravelEconomicServiceProvider extends PackageServiceProvider
         });
 
         EconomicApiService::setDriver(new HttpEconomicDriver());
-    }
-
-    public function configurePackage(Package $package): void
-    {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package
-            ->name('laravel-e-conomic')
-            ->hasConfigFile();
     }
 }
