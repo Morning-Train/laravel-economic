@@ -19,7 +19,7 @@ composer require morning-train/laravel-e-conomic
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-e-conomic-config"
+php artisan vendor:publish --tag="e-conomic-config"
 ```
 
 This is the contents of the published config file:
