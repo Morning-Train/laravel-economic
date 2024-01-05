@@ -14,6 +14,7 @@ You can install the package via composer:
 ```bash
 composer require morning-train/laravel-e-conomic
 ```
+### Configuring the package
 
 You can publish the config file with:
 
@@ -24,18 +25,41 @@ php artisan vendor:publish --tag="laravel-e-conomic-config"
 This is the contents of the published config file:
 
 ```php
+<?php
+
 return [
     'app_secret_token' => env('ECONOMIC_APP_SECRET_TOKEN'),
     'agreement_grant_token' => env('ECONOMIC_AGREEMENT_GRANT_TOKEN'),
+
+    /*
+     * This class handles actions on request and response to Economic.
+     */
+    'request_logger' => \Morningtrain\LaravelEconomic\RequestLogger\VoidRequestLogger::class,
 ];
+
 ```
 
 ## Usage
 
+### Creating your own request logger
+
+A request logger is any class that implements `\Morningtrain\LaravelEconomic\RequestLogger\RequestLogger`. Here's what that interface looks like.
+
 ```php
-$laravelEConomic = new Morningtrain\LaravelEConomic();
-echo $laravelEConomic->echoPhrase('Hello, Morningtrain!');
+use GuzzleHttp\Psr7\Response;
+use Illuminate\Http\Client\Request;
+use Psr\Http\Message\ResponseInterface;
+
+interface RequestLogger
+{
+    public function onRequest(Request $request);
+
+    public function onResponse(Response $response): ResponseInterface;
+}
+
 ```
+
+After creating your own `RequestLogger` you must register it in the `request_logger` in the `e-conomic` config file.
 
 ## Testing
 
