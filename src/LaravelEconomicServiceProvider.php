@@ -58,7 +58,7 @@ class LaravelEconomicServiceProvider extends PackageServiceProvider
                     fn (Response $response) => $logger->onResponse($response)
                 )
                 ->throwIf(function (\Illuminate\Http\Client\Response $response) {
-                    return $response->getStatusCode() !== 404;
+                    return $response->status() !== 404;
                 });
         });
 
