@@ -57,7 +57,9 @@ class LaravelEconomicServiceProvider extends PackageServiceProvider
                 ->withResponseMiddleware(
                     fn (Response $response) => $logger->onResponse($response)
                 )
-                ->throw();
+                ->throwIf(function (\Illuminate\Http\Client\Response $response) {
+                    return $response->getStatusCode() !== 404;
+                });
         });
 
         EconomicApiService::setDriver(new HttpEconomicDriver());
