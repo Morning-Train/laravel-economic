@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-e-conomic` will be documented in this file.
 
+## v0.6.0 - 2024-02-28
+
+### What's Changed
+
+* ⬆️ Upgrade morningtrain/economic to ^0.6 by @SimonJnsson in https://github.com/Morning-Train/laravel-economic/pull/7
+
+**Full Changelog**: https://github.com/Morning-Train/laravel-economic/compare/v0.5.0...v0.6.0
+
 ## v0.5.0 - 2024-02-28
 
 ### What's Changed
