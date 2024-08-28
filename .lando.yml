@@ -1,0 +1,5 @@
+name: laravel-economic
+recipe: lamp
+config:
+  php: 8.3
+  webroot: .
