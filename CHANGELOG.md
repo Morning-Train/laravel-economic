@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-e-conomic` will be documented in this file.
 
+## v0.8.0 - 2024-08-29
+
+### What's Changed
+
+* Support Laravel 11 by @SimonJnsson in https://github.com/Morning-Train/laravel-economic/pull/14
+
+**Full Changelog**: https://github.com/Morning-Train/laravel-economic/compare/v0.7.0...v0.8.0
+
 ## v0.7.0 - 2024-08-28
 
 ### What's Changed
