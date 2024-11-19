@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-e-conomic` will be documented in this file.
 
+## v0.9.0 - 2024-11-19
+
+- Add ability to set timeout duration in config.
+
 ## v0.8.0 - 2024-08-29
 
 ### What's Changed
