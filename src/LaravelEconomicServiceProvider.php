@@ -46,6 +46,7 @@ class LaravelEconomicServiceProvider extends PackageServiceProvider
 
             /** @var \Illuminate\Http\Client\Factory $this */
             return $this
+                ->timeout(config('e-conomic.timeout_seconds', 30))
                 ->withHeaders([
                     'X-AppSecretToken' => config('e-conomic.app_secret_token'),
                     'X-AgreementGrantToken' => config('e-conomic.agreement_grant_token'),
