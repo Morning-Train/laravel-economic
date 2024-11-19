@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-e-conomic` will be documented in this file.
 
+## v0.10.0 - 2024-11-19
+
+### What's Changed
+
+* Timeout setting by @SimonJnsson in https://github.com/Morning-Train/laravel-economic/pull/15
+
+**Full Changelog**: https://github.com/Morning-Train/laravel-economic/compare/v0.8.0...v0.10.0
+
 ## v0.9.0 - 2024-11-19
 
 - Add ability to set timeout duration in config.
