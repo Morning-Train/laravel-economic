@@ -57,3 +57,9 @@ it('throws on error status code', function (int $statusCode) {
         403,
         500,
     ]);
+
+it('sets request timeout from config value', function () {
+    config()->set('e-conomic.timeout_seconds', 45);
+
+    expect(Http::economic()->getOptions()['timeout'])->toBe(45);
+});
