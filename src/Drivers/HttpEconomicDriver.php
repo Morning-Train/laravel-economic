@@ -2,6 +2,7 @@
 
 namespace Morningtrain\LaravelEconomic\Drivers;
 
+use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 use Morningtrain\Economic\Classes\EconomicResponse;
 use Morningtrain\Economic\Interfaces\EconomicDriver;
@@ -15,16 +16,26 @@ class HttpEconomicDriver implements EconomicDriver
         return new EconomicResponse($response->status(), $response->json());
     }
 
-    public function post(string $url, array $body = []): EconomicResponse
+    public function post(string $url, array $body = [], ?string $idempotencyKey = null): EconomicResponse
     {
-        $response = Http::economic()->post($url, $body);
+        $response = Http::economic()
+            ->when(
+                $idempotencyKey !== null,
+                fn (PendingRequest $request) => $request->withHeader('Idempotency-Key', $idempotencyKey)
+            )
+            ->post($url, $body);
 
         return new EconomicResponse($response->status(), $response->json());
     }
 
-    public function put(string $url, array $body = []): EconomicResponse
+    public function put(string $url, array $body = [], ?string $idempotencyKey = null): EconomicResponse
     {
-        $response = Http::economic()->put($url, $body);
+        $response = Http::economic()
+            ->when(
+                $idempotencyKey !== null,
+                fn (PendingRequest $request) => $request->withHeader('Idempotency-Key', $idempotencyKey)
+            )
+            ->put($url, $body);
 
         return new EconomicResponse($response->status(), $response->json());
     }
