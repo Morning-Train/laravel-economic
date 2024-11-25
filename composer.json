@@ -20,7 +20,7 @@
         "spatie/laravel-package-tools": "^1.14.0",
         "illuminate/contracts": "^10.0|^11.0",
         "illuminate/http": "^10.0|^11.0",
-        "morningtrain/economic": "^v0.8"
+        "morningtrain/economic": "^v0.9"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
