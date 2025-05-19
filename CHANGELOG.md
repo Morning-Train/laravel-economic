@@ -2,6 +2,21 @@
 
 All notable changes to `laravel-e-conomic` will be documented in this file.
 
+## v1.0.0 - 2025-05-19
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/Morning-Train/laravel-economic/pull/17
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/Morning-Train/laravel-economic/pull/18
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot in https://github.com/Morning-Train/laravel-economic/pull/19
+* Feature/support laravel 12 by @VKattou in https://github.com/Morning-Train/laravel-economic/pull/20
+
+### New Contributors
+
+* @VKattou made their first contribution in https://github.com/Morning-Train/laravel-economic/pull/20
+
+**Full Changelog**: https://github.com/Morning-Train/laravel-economic/compare/v0.11.0...v1.0.0
+
 ## v0.10.0 - 2024-11-19
 
 ### What's Changed
