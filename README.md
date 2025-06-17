@@ -12,7 +12,7 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 You can install the package via composer:
 
 ```bash
-composer require morning-train/laravel-e-conomic
+composer require morningtrain/laravel-economic
 ```
 ### Configuring the package
 
